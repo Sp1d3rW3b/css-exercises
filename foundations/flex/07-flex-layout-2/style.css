@@ -21,23 +21,58 @@ body {
   font-size: 2rem;
 }
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+main {
+  flex: 1;
+  display: flex;
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
   box-sizing: border-box;
 
-  /* My Changes */
-  flex: 1;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.sidebar ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.sidebar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+.card-holder {
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+  padding: 1rem;
+  width: 300px;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
